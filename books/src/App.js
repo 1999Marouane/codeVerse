@@ -2,9 +2,12 @@
 import Card from 'react-bootstrap/Card';
 import img from './photo1707047716.png'
 import './App.css'
+import { useSelector } from 'react-redux';
 
 
 function App() {
+
+  const test = useSelector((state)=>state.dtat)
 
 
 
@@ -34,6 +37,8 @@ function App() {
 
 
       </div>
+
+      {test}
     </div>
   );
 }
